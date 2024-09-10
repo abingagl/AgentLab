@@ -13,8 +13,6 @@ os.environ["LANGCHAIN_PROJECT"] = "LangGraph ChatBot"
 # 配置 API Key 和 Base URL
 openai_api_key = os.getenv('OPENAI_API_KEY')  # 将密钥从环境变量中读取
 openai_api_base = os.getenv('OPENAI_API_BASE')
-openai_api_key = 'sk-WRm8odCDi7Yv8nKj6bDf2256C0D84094A1301c2aA37cC1Fb'
-openai_api_base = 'https://chatapi.midjourney-vip.cn/v1/'
 
 # 初始化一个 GPT-4o-mini 模型
 chat_model = ChatOpenAI(model="gpt-4o-mini", openai_api_key=openai_api_key, openai_api_base=openai_api_base)
